@@ -5,80 +5,124 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
-        <title>Expected Move Dashboard</title>
+        <title>Sigma Hunter Dashboard</title>
     </head>
-    <body class="bg-gray-900 text-white min-h-screen p-8">
-        <div class="max-w-4xl mx-auto">
-            <header class="mb-10 text-center">
-                <h1 class="text-4xl font-extrabold mb-2">📊 Option Expected Move</h1>
-                <p class="text-gray-500">최근 업데이트: 2026-01-29 10:20:50 (KST)</p>
+    <body class="bg-gray-900 text-white min-h-screen p-4 md:p-8">
+        <div class="max-w-6xl mx-auto">
+            <header class="mb-10 flex justify-between items-end">
+                <div>
+                    <h1 class="text-4xl font-black mb-2">🎯 Sigma Hunter</h1>
+                    <p class="text-gray-500">Hunter V6 기반 실시간 변동성 감시</p>
+                </div>
+                <div class="text-right text-sm text-gray-600">
+                    Last Update: 2026-01-29 10:24:32
+                </div>
             </header>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg">
-            <h2 class="text-2xl font-bold text-blue-400 mb-2">SOXX</h2>
-            <p class="text-gray-400 mb-4">현재가: <span class="text-white text-xl">$360.46</span></p>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg">
-                    <p class="text-xs text-gray-500 uppercase">1 Sigma (68%)</p>
-                    <p class="text-green-400 font-mono">$350.66 ~ $370.26</p>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:border-blue-500 transition-all">
+            <div class="flex justify-between items-start mb-4">
+                <h2 class="text-3xl font-black text-blue-400">SOXX</h2>
+                <div class="text-right">
+                    <p class="text-xs text-gray-500 uppercase">Distance to Bottom</p>
+                    <p class="text-yellow-400 text-lg">5.44% 남음</p>
+                </div>
+            </div>
+            
+            <p class="text-gray-400 mb-6">현재가: <span class="text-white text-2xl font-mono">$360.46</span></p>
+            
+            <div class="space-y-4">
+                <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-green-500">
+                    <p class="text-xs text-gray-400 mb-1">1 Sigma (68% Range)</p>
+                    <p class="text-green-400 font-mono text-sm">$350.66 ~ $370.26</p>
                 </div>
                 <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-yellow-500">
-                    <p class="text-xs text-gray-500 uppercase">2 Sigma (95%) - Hunter V6 Zone</p>
-                    <p class="text-yellow-400 font-bold font-mono">$340.86 ~ $380.06</p>
+                    <p class="text-xs text-gray-400 mb-1">2 Sigma (95% Hunter Zone)</p>
+                    <p class="text-yellow-400 font-bold font-mono text-lg">$340.86 ~ $380.06</p>
                 </div>
             </div>
         </div>
         
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg">
-            <h2 class="text-2xl font-bold text-blue-400 mb-2">URA</h2>
-            <p class="text-gray-400 mb-4">현재가: <span class="text-white text-xl">$61.81</span></p>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg">
-                    <p class="text-xs text-gray-500 uppercase">1 Sigma (68%)</p>
-                    <p class="text-green-400 font-mono">$59.39 ~ $64.23</p>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:border-blue-500 transition-all">
+            <div class="flex justify-between items-start mb-4">
+                <h2 class="text-3xl font-black text-blue-400">URA</h2>
+                <div class="text-right">
+                    <p class="text-xs text-gray-500 uppercase">Distance to Bottom</p>
+                    <p class="text-yellow-400 text-lg">7.83% 남음</p>
+                </div>
+            </div>
+            
+            <p class="text-gray-400 mb-6">현재가: <span class="text-white text-2xl font-mono">$61.81</span></p>
+            
+            <div class="space-y-4">
+                <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-green-500">
+                    <p class="text-xs text-gray-400 mb-1">1 Sigma (68% Range)</p>
+                    <p class="text-green-400 font-mono text-sm">$59.39 ~ $64.23</p>
                 </div>
                 <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-yellow-500">
-                    <p class="text-xs text-gray-500 uppercase">2 Sigma (95%) - Hunter V6 Zone</p>
-                    <p class="text-yellow-400 font-bold font-mono">$56.97 ~ $66.65</p>
+                    <p class="text-xs text-gray-400 mb-1">2 Sigma (95% Hunter Zone)</p>
+                    <p class="text-yellow-400 font-bold font-mono text-lg">$56.97 ~ $66.65</p>
                 </div>
             </div>
         </div>
         
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg">
-            <h2 class="text-2xl font-bold text-blue-400 mb-2">GLD</h2>
-            <p class="text-gray-400 mb-4">현재가: <span class="text-white text-xl">$494.56</span></p>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg">
-                    <p class="text-xs text-gray-500 uppercase">1 Sigma (68%)</p>
-                    <p class="text-green-400 font-mono">$477.81 ~ $511.31</p>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:border-blue-500 transition-all">
+            <div class="flex justify-between items-start mb-4">
+                <h2 class="text-3xl font-black text-blue-400">GLD</h2>
+                <div class="text-right">
+                    <p class="text-xs text-gray-500 uppercase">Distance to Bottom</p>
+                    <p class="text-yellow-400 text-lg">6.77% 남음</p>
+                </div>
+            </div>
+            
+            <p class="text-gray-400 mb-6">현재가: <span class="text-white text-2xl font-mono">$494.56</span></p>
+            
+            <div class="space-y-4">
+                <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-green-500">
+                    <p class="text-xs text-gray-400 mb-1">1 Sigma (68% Range)</p>
+                    <p class="text-green-400 font-mono text-sm">$477.81 ~ $511.31</p>
                 </div>
                 <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-yellow-500">
-                    <p class="text-xs text-gray-500 uppercase">2 Sigma (95%) - Hunter V6 Zone</p>
-                    <p class="text-yellow-400 font-bold font-mono">$461.06 ~ $528.06</p>
+                    <p class="text-xs text-gray-400 mb-1">2 Sigma (95% Hunter Zone)</p>
+                    <p class="text-yellow-400 font-bold font-mono text-lg">$461.06 ~ $528.06</p>
                 </div>
             </div>
         </div>
         
-        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg">
-            <h2 class="text-2xl font-bold text-blue-400 mb-2">UGL</h2>
-            <p class="text-gray-400 mb-4">현재가: <span class="text-white text-xl">$85.2</span></p>
-            <div class="space-y-3">
-                <div class="bg-gray-900 p-3 rounded-lg">
-                    <p class="text-xs text-gray-500 uppercase">1 Sigma (68%)</p>
-                    <p class="text-green-400 font-mono">$71.8 ~ $98.6</p>
+        <div class="bg-gray-800 p-6 rounded-xl border border-gray-700 shadow-lg hover:border-blue-500 transition-all">
+            <div class="flex justify-between items-start mb-4">
+                <h2 class="text-3xl font-black text-blue-400">UGL</h2>
+                <div class="text-right">
+                    <p class="text-xs text-gray-500 uppercase">Distance to Bottom</p>
+                    <p class="text-yellow-400 text-lg">31.46% 남음</p>
+                </div>
+            </div>
+            
+            <p class="text-gray-400 mb-6">현재가: <span class="text-white text-2xl font-mono">$85.2</span></p>
+            
+            <div class="space-y-4">
+                <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-green-500">
+                    <p class="text-xs text-gray-400 mb-1">1 Sigma (68% Range)</p>
+                    <p class="text-green-400 font-mono text-sm">$71.8 ~ $98.6</p>
                 </div>
                 <div class="bg-gray-900 p-3 rounded-lg border-l-4 border-yellow-500">
-                    <p class="text-xs text-gray-500 uppercase">2 Sigma (95%) - Hunter V6 Zone</p>
-                    <p class="text-yellow-400 font-bold font-mono">$58.4 ~ $112.0</p>
+                    <p class="text-xs text-gray-400 mb-1">2 Sigma (95% Hunter Zone)</p>
+                    <p class="text-yellow-400 font-bold font-mono text-lg">$58.4 ~ $112.0</p>
                 </div>
             </div>
         </div>
         
             </div>
-            <footer class="mt-12 text-center text-gray-600 text-sm">
-                데이터 출처: Yahoo Finance | Hunter V6 전략 참고용
-            </footer>
+            
+            <div class="mt-12 p-6 bg-gray-800 rounded-xl border border-gray-700">
+                <h3 class="text-lg font-bold mb-2 text-blue-300">💡 사용 팁</h3>
+                <ul class="text-gray-400 text-sm list-disc list-inside space-y-1">
+                    <li><b>Distance to Bottom:</b> 현재가에서 2시그마 하단선까지의 거리를 나타냅니다.</li>
+                    <li>값이 <b>0%에 가까워질수록</b> 통계적 저점(Hunter Zone)에 도달한 것입니다.</li>
+                    <li>Hunter V6 차트에서 <b>Sigma -2.5 + Diamond 신호</b>가 뜰 때 이 수치를 함께 확인하세요.</li>
+                </ul>
+            </div>
         </div>
     </body>
     </html>
