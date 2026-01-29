@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 
 def get_data():
-    tickers = ["SOXX", "URA", "UGL"]
+    tickers = ["SOXX", "URA", "GLD", "UGL"]
     results = []
 
     for symbol in tickers:
