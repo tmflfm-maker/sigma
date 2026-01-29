@@ -87,7 +87,7 @@ def generate_html(data):
             <header class="mb-10 flex justify-between items-end">
                 <div>
                     <h1 class="text-4xl font-black mb-2">🎯 Sigma Hunter</h1>
-                    <p class="text-gray-500">Hunter V6 기반 실시간 변동성 감시</p>
+                    <p class="text-gray-500">실시간 변동성 감시</p>
                 </div>
                 <div class="text-right text-sm text-gray-600">
                     Last Update: {now}
@@ -103,7 +103,6 @@ def generate_html(data):
                 <ul class="text-gray-400 text-sm list-disc list-inside space-y-1">
                     <li><b>Distance to Bottom:</b> 현재가에서 2시그마 하단선까지의 거리를 나타냅니다.</li>
                     <li>값이 <b>0%에 가까워질수록</b> 통계적 저점(Hunter Zone)에 도달한 것입니다.</li>
-                    <li>Hunter V6 차트에서 <b>Sigma -2.5 + Diamond 신호</b>가 뜰 때 이 수치를 함께 확인하세요.</li>
                 </ul>
             </div>
         </div>
